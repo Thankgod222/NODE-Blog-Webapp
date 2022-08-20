@@ -11,5 +11,16 @@
     "mongodb": "^4.9.0",
     "mongoose": "^6.5.2",
     "nodemon": "^2.0.19"
-  }
+  },
+  "name": "node-blog-webapp",
+  "description": "This was created as part of YouTube Video. Links below",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

@@ -21,4 +21,6 @@ To run this project, install it locally using npm:
 ```
 $ npm install
 $ npm start
+
+checkout my unique blog app build with node
 ```

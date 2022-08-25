@@ -12,7 +12,7 @@
     "mongoose": "^6.5.2",
     "nodemon": "^2.0.19"
   },
-  "name": "node-blog-webapp",
+  "name": "blog-webapp",
   "description": "This was created as part of YouTube Video. Links below",
   "version": "1.0.0",
   "main": "app.js",
@@ -22,5 +22,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thankgod222/NODE-Blog-Webapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Thankgod222/NODE-Blog-Webapp/issues"
+  },
+  "homepage": "https://github.com/Thankgod222/NODE-Blog-Webapp#readme"
 }

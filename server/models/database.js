@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const dbUrl = process.env.MONGODB_URI || 'mongodb://localhost:27017/Recipes';
+
     
-mongoose.connect(dbUrl, {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });

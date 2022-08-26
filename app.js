@@ -6,12 +6,12 @@ const cookieParser = require("cookie-parser");
 const flash = require("connect-flash");
 
 const app = express();
-const port = process.env.PORT || 3000;
+
 
 // if (process.env.NODE_ENV !== "production") {
 //   require("dotenv").config();
 // }
- // require("dotenv").config();
+ require("dotenv").config();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -20,11 +20,15 @@ app.use(expressLayouts);
 app.use(cookieParser("CookingBlogSecure"));
 app.use(
   session({
-    secret: "CookingBlogSecretSession",
+    secret,
+    // secret: "CookingBlogSecretSession",
     saveUninitialized: true,
     resave: true,
   })
 );
+
+
+
 app.use(flash());
 app.use(fileUpload());
 
@@ -34,4 +38,5 @@ app.set("view engine", "ejs");
 const routes = require("./server/routes/recipeRoutes.js");
 app.use("/", routes);
 
+const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening to port ${port}`));
